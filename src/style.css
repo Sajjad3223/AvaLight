@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Nian";
+    src: url(./fonts/Nian-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nian";
+    src: url(./fonts/Nian-ExtraBold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nian";
+    src: url(./fonts/Nian-ExtraBold.woff2) format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nian";
+    src: url(./fonts/Nian-Black.woff2) format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root,html{
+    font-family: 'Nian';
+    --bg:#000;
+    --surface:#0D0D0D;
+}
+
+.container{
+    @apply max-w-[1488px] mx-auto px-4 lg:px-0;
+}
+
+body{
+    background-color: var(--bg);
+    color:#FFF;
+}
+
+@theme{
+    --color-primary: #FFF;
+    --color-bg:var(--bg);
+    --color-surface:var(--surface);
+    --text-tiny:10px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
