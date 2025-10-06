@@ -50,3 +50,24 @@ body{
 ::-webkit-scrollbar{
     display: none;
 }
+
+.border{
+    @apply border-white/10;
+}
+
+.nav-link{
+    @apply opacity-60 hover:opacity-100;
+}
+.active-link{
+    text-shadow: 0 0 10px #FFFFFF;
+}
+
+#mobile-header{
+    @apply transition-all duration-300;
+}
+.show-header{
+    @apply opacity-100 translate-x-0;
+}
+.hide-header{
+    @apply opacity-0 -translate-x-full;
+}
