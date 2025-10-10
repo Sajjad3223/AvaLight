@@ -26,6 +26,7 @@
 }
 
 :root,html{
+    interpolate-size: allow-keywords;
     font-family: 'Nian';
     --bg:#000;
     --surface:#0D0D0D;
@@ -70,4 +71,113 @@ body{
 }
 .hide-header{
     @apply opacity-0 -translate-x-full;
+}
+
+/* Buttons */
+.btn{
+    @apply px-4 py-1 rounded-full text-sm lg:text-base;
+
+    &.btn-primary{
+        @apply bg-primary text-black;
+    }
+    &.btn-outline{
+        @apply border border-white/15 text-white;
+    }
+    &.btn-icon{
+        @apply px-0.5 py-0.5 grid place-items-center rounded-lg;
+    }
+}
+
+
+/* Filter Overlay */
+#filters-overlay {
+    @apply lg:hidden fixed inset-0 z-20 flex items-end justify-end bg-black/50 backdrop-blur transition-all duration-300;
+
+    &.hide-filters{
+        @apply opacity-0 translate-y-full -z-20;
+    }
+    &.show-filters{
+        @apply opacity-100 translate-y-0 z-20;
+    }
+}
+
+/* Collapsable */
+.collapsable{
+
+    &  .collapsable-toggler  .collapsable-arrow{
+        @apply transition-transform duration-300;
+    }
+
+    &:has(.collapsable-show) .collapsable-arrow{
+        @apply rotate-180;
+    }
+
+    & > .collapsable-content{
+        @apply transition-all duration-200;
+        &.collapsable-hide{
+            @apply max-h-0 overflow-clip py-0;
+        }
+        &.collapsable-show{
+            @apply max-h-[500px] p-4;
+        }
+    }
+}
+
+
+/* Toggle Switch */
+.switch {
+    --button-width: 3.5em;
+    --button-height: 2em;
+    --toggle-diameter: 1.5em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-grey: #fff;
+    --color-green: #4296f4;
+    direction: ltr;
+}
+
+.slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: #78788029;
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #FFF;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+    background-color: #2D7BD4;
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+    display: none;
+}
+
+.switch input[type="checkbox"]:active + .slider::after {
+    width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
 }
