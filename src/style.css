@@ -30,6 +30,9 @@
     font-family: 'Nian';
     --bg:#000;
     --surface:#0D0D0D;
+    --darkSurface:#070707;
+    --success:#20F87A;
+    --info:#2D7BD4;
 }
 
 .container{
@@ -45,6 +48,9 @@ body{
     --color-primary: #FFF;
     --color-bg:var(--bg);
     --color-surface:var(--surface);
+    --color-darkSurface:var(--darkSurface);
+    --color-success:var(--success);
+    --color-info:var(--info);
     --text-tiny:10px;
 }
 
@@ -57,7 +63,7 @@ body{
 }
 
 .nav-link{
-    @apply opacity-60 hover:opacity-100;
+    @apply opacity-60 hover:opacity-100 transition-opacity duration-200;
 }
 .active-link{
     text-shadow: 0 0 10px #FFFFFF;
@@ -75,10 +81,13 @@ body{
 
 /* Buttons */
 .btn{
-    @apply px-4 py-1 rounded-full text-sm lg:text-base;
+    @apply px-4 py-2 rounded-full text-sm lg:text-base flex items-center justify-center;
 
     &.btn-primary{
-        @apply bg-primary text-black;
+        @apply bg-primary text-black transition-shadow duration-200;
+        &:hover{
+            box-shadow: 0 0 32px 0 #FFFFFF40;
+        }
     }
     &.btn-outline{
         @apply border border-white/15 text-white;
