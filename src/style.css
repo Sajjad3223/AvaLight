@@ -89,6 +89,9 @@ body{
             box-shadow: 0 0 32px 0 #FFFFFF40;
         }
     }
+    &.btn-dark{
+        @apply bg-bg text-white transition-shadow duration-200;
+    }
     &.btn-outline{
         @apply border border-white/15 text-white;
     }
