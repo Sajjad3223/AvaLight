@@ -29,3 +29,11 @@ document.querySelectorAll('.collapsable').forEach(el => {
         el.querySelector('.collapsable-content').classList.toggle('collapsable-show');
     })
 })
+
+document.querySelectorAll('.modal-toggle').forEach(toggle=>{
+    const modalId = toggle.getAttribute('data-modal-id');
+    toggle.addEventListener('click', ()=>{
+        document.getElementById(modalId).classList.toggle('hidden');
+        document.getElementById(modalId).classList.toggle('flex');
+    })
+})
