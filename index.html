@@ -5,13 +5,13 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="./src/output.css">
     <title>آوا لایت</title>
   </head>
   <body class="w-full flex flex-col items-center relative">
     <header class="container flex items-center justify-between lg:grid lg:grid-cols-5 gap-4 py-6 2xl:py-12">
       <div class="flex items-center gap-4">
-        <img src="/avalight-light.png" alt="logo" class="w-12">
+        <img src="./public/avalight-light.png" alt="logo" class="w-12">
         <div class="flex flex-col gap-1">
           <span class="text-2xl">آوا لایت</span>
           <span class="text-xl opacity-60">AvaLight</span>
@@ -20,22 +20,22 @@
       <nav class="col-span-3 hidden lg:flex items-center">
         <ul class="w-full flex items-center justify-center gap-12 text-xl">
           <li>
-            <a href="/">صفحه اصلی</a>
+            <a href="./index.html">صفحه اصلی</a>
           </li>
           <li>
-            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/products">محصولات</a>
+            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./products.html">محصولات</a>
           </li>
           <li>
-            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">درباره ما</a>
+            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./about-us.html">درباره ما</a>
           </li>
           <li>
-            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">تماس با ما</a>
+            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./contact-us.html">تماس با ما</a>
           </li>
           <li>
-            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">سوالات متداول</a>
+            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./components.html">کامپننت ها</a>
           </li>
           <li>
-            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">بلاگ</a>
+            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./blog.html">بلاگ</a>
           </li>
         </ul>
       </nav>
@@ -51,11 +51,11 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9983 22.1563L10.5882 18.6563L7.20484 15.1563C5.37443 13.2219 5.37443 10.1944 7.20484 8.2601C8.10113 7.39871 9.31509 6.94857 10.5563 7.01737C11.7975 7.08618 12.9543 7.66775 13.7498 8.62293L13.9983 8.86677L14.2445 8.61243C15.0401 7.65725 16.1969 7.07568 17.4381 7.00687C18.6793 6.93807 19.8932 7.38821 20.7895 8.2496C22.6199 10.1839 22.6199 13.2114 20.7895 15.1458L17.4062 18.6458L13.9983 22.1563Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
-        <button>
+        <a href="./cart.html">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.41273 10.4172C5.36701 10.0055 4.99622 9.70884 4.58453 9.75456C4.17285 9.80028 3.87618 10.1711 3.9219 10.5828L4.66732 10.5L5.41273 10.4172ZM5.73248 20.0911L4.98707 20.1739L4.98708 20.174L5.73248 20.0911ZM8.05065 22.1666L8.05037 22.9166H8.05065V22.1666ZM19.9507 22.1666L19.9507 21.4166H19.9507V22.1666ZM22.27 20.0911L23.0154 20.174L23.0154 20.1738L22.27 20.0911ZM24.0794 10.5827C24.1251 10.171 23.8284 9.80022 23.4167 9.75455C23.005 9.70888 22.6342 10.0056 22.5886 10.4173L23.334 10.5L24.0794 10.5827ZM2.33398 9.74998C1.91977 9.74998 1.58398 10.0858 1.58398 10.5C1.58398 10.9142 1.91977 11.25 2.33398 11.25V10.5V9.74998ZM25.6673 11.25C26.0815 11.25 26.4173 10.9142 26.4173 10.5C26.4173 10.0858 26.0815 9.74998 25.6673 9.74998V10.5V11.25ZM5.16316 10.1646C4.97792 10.5351 5.12809 10.9856 5.49857 11.1708C5.86906 11.356 6.31956 11.2059 6.50481 10.8354L5.83398 10.5L5.16316 10.1646ZM8.83814 6.16872C9.02338 5.79824 8.87321 5.34773 8.50273 5.16249C8.13224 4.97725 7.68174 5.12742 7.4965 5.4979L8.16732 5.83331L8.83814 6.16872ZM21.4965 10.8354C21.6817 11.2059 22.1322 11.356 22.5027 11.1708C22.8732 10.9856 23.0234 10.5351 22.8381 10.1646L22.1673 10.5L21.4965 10.8354ZM20.5048 5.4979C20.3196 5.12742 19.8691 4.97725 19.4986 5.16249C19.1281 5.34773 18.9779 5.79824 19.1632 6.16872L19.834 5.83331L20.5048 5.4979ZM9.75065 17.5C9.75065 17.9142 10.0864 18.25 10.5007 18.25C10.9149 18.25 11.2507 17.9142 11.2507 17.5H10.5007H9.75065ZM11.2507 15.1666C11.2507 14.7524 10.9149 14.4166 10.5007 14.4166C10.0864 14.4166 9.75065 14.7524 9.75065 15.1666H10.5007H11.2507ZM13.2507 17.5C13.2507 17.9142 13.5864 18.25 14.0007 18.25C14.4149 18.25 14.7507 17.9142 14.7507 17.5H14.0007H13.2507ZM14.7507 15.1666C14.7507 14.7524 14.4149 14.4166 14.0007 14.4166C13.5864 14.4166 13.2507 14.7524 13.2507 15.1666H14.0007H14.7507ZM16.7507 17.5C16.7507 17.9142 17.0864 18.25 17.5007 18.25C17.9149 18.25 18.2507 17.9142 18.2507 17.5H17.5007H16.7507ZM18.2507 15.1666C18.2507 14.7524 17.9149 14.4166 17.5007 14.4166C17.0864 14.4166 16.7507 14.7524 16.7507 15.1666H17.5007H18.2507ZM4.66732 10.5L3.9219 10.5828L4.98707 20.1739L5.73248 20.0911L6.4779 20.0084L5.41273 10.4172L4.66732 10.5ZM5.73248 20.0911L4.98708 20.174C5.16063 21.735 6.47978 22.9161 8.05037 22.9166L8.05065 22.1666L8.05093 21.4166C7.24442 21.4163 6.56701 20.8098 6.47789 20.0083L5.73248 20.0911ZM8.05065 22.1666V22.9166H19.9507V22.1666V21.4166H8.05065V22.1666ZM19.9507 22.1666L19.9506 22.9166C21.5217 22.9168 22.8418 21.7356 23.0154 20.174L22.27 20.0911L21.5246 20.0083C21.4354 20.8101 20.7576 21.4167 19.9507 21.4166L19.9507 22.1666ZM22.27 20.0911L23.0154 20.1738L24.0794 10.5827L23.334 10.5L22.5886 10.4173L21.5246 20.0085L22.27 20.0911ZM2.33398 10.5V11.25H25.6673V10.5V9.74998H2.33398V10.5ZM5.83398 10.5L6.50481 10.8354L8.83814 6.16872L8.16732 5.83331L7.4965 5.4979L5.16316 10.1646L5.83398 10.5ZM22.1673 10.5L22.8381 10.1646L20.5048 5.4979L19.834 5.83331L19.1632 6.16872L21.4965 10.8354L22.1673 10.5ZM10.5007 17.5H11.2507V15.1666H10.5007H9.75065V17.5H10.5007ZM14.0007 17.5H14.7507V15.1666H14.0007H13.2507V17.5H14.0007ZM17.5007 17.5H18.2507V15.1666H17.5007H16.7507V17.5H17.5007Z" fill="white"/>
           </svg>
-        </button>
+        </a>
         <button class="px-6 py-3 rounded-full bg-primary text-black">
           ثبـــت نام
         </button>
@@ -64,7 +64,7 @@
       <div id="mobile-header" class="fixed z-20 inset-0 bg-bg flex flex-col p-8 lg:hidden gap-12 hide-header">
         <div class="flex w-full items-center justify-between">
           <div class="flex items-center gap-3">
-            <img src="/avalight-light.png" alt="logo" class="w-12">
+            <img src="./public/avalight-light.png" alt="logo" class="w-12">
             <div class="flex flex-col gap-1">
               <span class="text-xl">آوا لایـــــــــت</span>
               <span class="opacity-60">AvaLight</span>
@@ -91,22 +91,22 @@
         <nav class="w-full">
           <ul class="w-full flex flex-col items-end gap-7 text-xl">
             <li>
-              <a href="/" class="active-link">صفحه اصلی</a>
+              <a href="./index.html" class="active-link">صفحه اصلی</a>
             </li>
             <li>
-              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">محصولات</a>
+              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./index.html">محصولات</a>
             </li>
             <li>
-              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">درباره ما</a>
+              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./index.html">درباره ما</a>
             </li>
             <li>
-              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">تماس با ما</a>
+              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./index.html">تماس با ما</a>
             </li>
             <li>
-              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">سوالات متداول</a>
+              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./index.html">سوالات متداول</a>
             </li>
             <li>
-              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="/">بلاگ</a>
+              <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./index.html">بلاگ</a>
             </li>
             <li class="w-full flex items-center">
               <input type="text" class="w-full bg-transparent border rounded-full py-2 px-4 text-sm text-white/50" placeholder="جستجو ...">
@@ -273,7 +273,7 @@
               کارایی و سبک لوکـــس برای دکوراسیونی متفاوت.
             </p>
           </div>
-          <button class="flex bg-primary rounded-full text-black items-center gap-1.5 px-6 py-3">
+          <button class="btn btn-primary">
             <span>مشاهده محصولات</span>
             <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.25 11L1.25 6L6.25 1" stroke="#010A1A" stroke-width="1.5" stroke-linecap="round"/>
@@ -609,16 +609,16 @@
                 <div class="swiper-slide">
                   <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                    <a href="" class="w-full">
-                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    <a href="./single.html" class="w-full">
+                      <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                     </a>
 
                     <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                     <div class="w-full p-5 flex flex-col gap-5">
-                      <a href="#" class="text-2xl">
+                      <a href="./single.html" class="text-2xl">
                         ریسه نئون فلکسی مدل NE1 طول 5 متر
                       </a>
                       <div class="w-full flex flex-col gap-3">
@@ -646,16 +646,16 @@
                 <div class="swiper-slide">
                   <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                    <a href="" class="w-full">
-                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    <a href="./single.html" class="w-full">
+                      <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                     </a>
 
                     <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                     <div class="w-full p-5 flex flex-col gap-5">
-                      <a href="#" class="text-2xl">
+                      <a href="./single.html" class="text-2xl">
                         ریسه نئون فلکسی مدل NE1 طول 5 متر
                       </a>
                       <div class="w-full flex flex-col gap-3">
@@ -683,16 +683,16 @@
                 <div class="swiper-slide">
                   <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                    <a href="" class="w-full">
-                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    <a href="./single.html" class="w-full">
+                      <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                     </a>
 
                     <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                     <div class="w-full p-5 flex flex-col gap-5">
-                      <a href="#" class="text-2xl">
+                      <a href="./single.html" class="text-2xl">
                         ریسه نئون فلکسی مدل NE1 طول 5 متر
                       </a>
                       <div class="w-full flex flex-col gap-3">
@@ -720,16 +720,16 @@
                 <div class="swiper-slide">
                   <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                    <a href="" class="w-full">
-                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    <a href="./single.html" class="w-full">
+                      <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                     </a>
 
                     <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                     <div class="w-full p-5 flex flex-col gap-5">
-                      <a href="#" class="text-2xl">
+                      <a href="./single.html" class="text-2xl">
                         ریسه نئون فلکسی مدل NE1 طول 5 متر
                       </a>
                       <div class="w-full flex flex-col gap-3">
@@ -757,16 +757,16 @@
                 <div class="swiper-slide">
                   <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                    <a href="" class="w-full">
-                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    <a href="./single.html" class="w-full">
+                      <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                     </a>
 
                     <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                     <div class="w-full p-5 flex flex-col gap-5">
-                      <a href="#" class="text-2xl">
+                      <a href="./single.html" class="text-2xl">
                         ریسه نئون فلکسی مدل NE1 طول 5 متر
                       </a>
                       <div class="w-full flex flex-col gap-3">
@@ -794,16 +794,16 @@
                 <div class="swiper-slide">
                   <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                    <a href="" class="w-full">
-                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    <a href="./single.html" class="w-full">
+                      <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                     </a>
 
                     <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                     <div class="w-full p-5 flex flex-col gap-5">
-                      <a href="#" class="text-2xl">
+                      <a href="./single.html" class="text-2xl">
                         ریسه نئون فلکسی مدل NE1 طول 5 متر
                       </a>
                       <div class="w-full flex flex-col gap-3">
@@ -841,183 +841,6 @@
             </div>
           </div>
         </div>
-        <!--<div class="w-full overflow-y-clip overflow-x-auto flex lg:grid lg:grid-cols-5 gap-6 pb-2">
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
-            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
-
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
-
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
-                    </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
-                  </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
-                </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
-            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
-
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
-
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
-                    </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
-                  </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
-                </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
-            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
-
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
-
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
-                    </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
-                  </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
-                </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
-            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
-
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
-
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
-                    </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
-                  </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
-                </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
-            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
-
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
-
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
-                    </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
-                  </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
-                </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>-->
       </div>
 
       <!-- Projects -->
@@ -1043,7 +866,7 @@
 
           <div class="w-full flex flex-col lg:flex-row gap-9 lg:gap-24 lg:items-center">
             <div class="w-full lg:w-1/3 rounded-4xl relative">
-              <img src="/light.png" alt="light" class="w-full h-full rounded-4xl">
+              <img src="./public/light.png" alt="light" class="w-full h-full rounded-4xl">
               <div class="absolute bottom-0 lg:bottom-10 left-16 lg:left-0 translate-y-1/4 lg:translate-y-0 lg:-translate-x-1/2 bg-primary px-3 py-2 rounded-2xl flex items-center text-lg lg:text-3xl gap-0.5 text-black">
                 <span class="opacity-70">15</span>
                 <span class="opacity-70">/</span>
@@ -1103,16 +926,16 @@
               <div class="swiper-slide">
                 <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                  <a href="" class="w-full">
-                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  <a href="./single.html" class="w-full">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                   </a>
 
                   <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                   <div class="w-full p-5 flex flex-col gap-5">
-                    <a href="#" class="text-2xl">
+                    <a href="./single.html" class="text-2xl">
                       ریسه نئون فلکسی مدل NE1 طول 5 متر
                     </a>
                     <div class="w-full flex flex-col gap-3">
@@ -1140,16 +963,16 @@
               <div class="swiper-slide">
                 <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                  <a href="" class="w-full">
-                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  <a href="./single.html" class="w-full">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                   </a>
 
                   <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                   <div class="w-full p-5 flex flex-col gap-5">
-                    <a href="#" class="text-2xl">
+                    <a href="./single.html" class="text-2xl">
                       ریسه نئون فلکسی مدل NE1 طول 5 متر
                     </a>
                     <div class="w-full flex flex-col gap-3">
@@ -1177,16 +1000,16 @@
               <div class="swiper-slide">
                 <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                  <a href="" class="w-full">
-                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  <a href="./single.html" class="w-full">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                   </a>
 
                   <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                   <div class="w-full p-5 flex flex-col gap-5">
-                    <a href="#" class="text-2xl">
+                    <a href="./single.html" class="text-2xl">
                       ریسه نئون فلکسی مدل NE1 طول 5 متر
                     </a>
                     <div class="w-full flex flex-col gap-3">
@@ -1214,16 +1037,16 @@
               <div class="swiper-slide">
                 <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                  <a href="" class="w-full">
-                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  <a href="./single.html" class="w-full">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                   </a>
 
                   <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                   <div class="w-full p-5 flex flex-col gap-5">
-                    <a href="#" class="text-2xl">
+                    <a href="./single.html" class="text-2xl">
                       ریسه نئون فلکسی مدل NE1 طول 5 متر
                     </a>
                     <div class="w-full flex flex-col gap-3">
@@ -1251,53 +1074,16 @@
               <div class="swiper-slide">
                 <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                  <a href="" class="w-full">
-                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  <a href="./single.html" class="w-full">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
                   </a>
 
                   <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
+                      7%
+                    </span>
 
                   <div class="w-full p-5 flex flex-col gap-5">
-                    <a href="#" class="text-2xl">
-                      ریسه نئون فلکسی مدل NE1 طول 5 متر
-                    </a>
-                    <div class="w-full flex flex-col gap-3">
-                      <div class="w-full flex items-end justify-between">
-                        <div class="flex flex-col">
-                          <div class="flex items-end gap-1">
-                            <span class="text-2xl">320,000</span>
-                            <span class="opacity-60">تومان</span>
-                          </div>
-                          <span class="text-2xl opacity-60 line-through">360,000</span>
-                        </div>
-                        <button class="p-1.5">
-                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        </button>
-                      </div>
-                      <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                        افزودن به سبد خرید
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
-            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-                  <a href="" class="w-full">
-                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-                  </a>
-
-                  <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
-              7%
-            </span>
-
-                  <div class="w-full p-5 flex flex-col gap-5">
-                    <a href="#" class="text-2xl">
+                    <a href="./single.html" class="text-2xl">
                       ریسه نئون فلکسی مدل NE1 طول 5 متر
                     </a>
                     <div class="w-full flex flex-col gap-3">
@@ -1353,7 +1139,7 @@
                 <span class="lg:text-2xl opacity-60">راهنمای خرید</span>
               </div>
             </div>
-            <a href="#" class="opacity-80">مشاهده همه</a>
+            <a href="./blog.html" class="opacity-80">مشاهده همه</a>
           </div>
 
           <div class="w-full overflow-clip">
@@ -1363,12 +1149,12 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <div class="w-full flex flex-col gap-3 lg:gap-6">
-                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                  <a href="./blog-single.html" class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-4xl">
                     <div class="w-full flex flex-col gap-2">
-              <span class="text-xl lg:text-3xl">
-                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
-              </span>
+                    <span class="text-xl lg:text-3xl">
+                      چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+                    </span>
                       <p class="lg:text-2xl opacity-60">
                         راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
                       </p>
@@ -1377,15 +1163,15 @@
                       <span>1404/12/23</span>
                       <span>36 بازدید</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="w-full flex flex-col gap-3 lg:gap-6">
-                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                  <a href="./blog-single.html" class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-4xl">
                     <div class="w-full flex flex-col gap-2">
-              <span class="text-xl lg:text-3xl">
-                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
-              </span>
+                    <span class="text-xl lg:text-3xl">
+                      چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+                    </span>
                       <p class="lg:text-2xl opacity-60">
                         راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
                       </p>
@@ -1394,15 +1180,15 @@
                       <span>1404/12/23</span>
                       <span>36 بازدید</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="w-full flex flex-col gap-3 lg:gap-6">
-                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                  <a href="./blog-single.html" class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-4xl">
                     <div class="w-full flex flex-col gap-2">
-              <span class="text-xl lg:text-3xl">
-                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
-              </span>
+                    <span class="text-xl lg:text-3xl">
+                      چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+                    </span>
                       <p class="lg:text-2xl opacity-60">
                         راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
                       </p>
@@ -1411,15 +1197,15 @@
                       <span>1404/12/23</span>
                       <span>36 بازدید</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="w-full flex flex-col gap-3 lg:gap-6">
-                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                  <a href="./blog-single.html" class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="./public/light.png" alt="light" class="w-full rounded-4xl">
                     <div class="w-full flex flex-col gap-2">
-              <span class="text-xl lg:text-3xl">
-                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
-              </span>
+                    <span class="text-xl lg:text-3xl">
+                      چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+                    </span>
                       <p class="lg:text-2xl opacity-60">
                         راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
                       </p>
@@ -1428,7 +1214,7 @@
                       <span>1404/12/23</span>
                       <span>36 بازدید</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <!-- If we need pagination -->
@@ -1443,53 +1229,6 @@
             </div>
           </div>
 
-          <!--<div class="w-full flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-9">
-            <div class="w-full flex flex-col gap-3 lg:gap-6">
-              <img src="/light.png" alt="light" class="w-full rounded-4xl">
-              <div class="w-full flex flex-col gap-2">
-              <span class="text-xl lg:text-3xl">
-                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
-              </span>
-              <p class="lg:text-2xl opacity-60">
-                راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
-              </p>
-              </div>
-              <div class="flex items-center gap-6">
-                <span>1404/12/23</span>
-                <span>36 بازدید</span>
-              </div>
-            </div>
-            <div class="w-full flex flex-col gap-3 lg:gap-6">
-              <img src="/light.png" alt="light" class="w-full rounded-4xl">
-              <div class="w-full flex flex-col gap-2">
-              <span class="text-xl lg:text-3xl">
-                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
-              </span>
-                <p class="lg:text-2xl opacity-60">
-                  راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
-                </p>
-              </div>
-              <div class="flex items-center gap-6">
-                <span>1404/12/23</span>
-                <span>36 بازدید</span>
-              </div>
-            </div>
-            <div class="w-full flex flex-col gap-3 lg:gap-6">
-              <img src="/light.png" alt="light" class="w-full rounded-4xl">
-              <div class="w-full flex flex-col gap-2">
-              <span class="text-xl lg:text-3xl">
-                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
-              </span>
-                <p class="lg:text-2xl opacity-60">
-                  راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
-                </p>
-              </div>
-              <div class="flex items-center gap-6">
-                <span>1404/12/23</span>
-                <span>36 بازدید</span>
-              </div>
-            </div>
-          </div>-->
         </div>
       </div>
 
@@ -1517,7 +1256,7 @@
                   <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
                     <div class="w-full flex items-center justify-between">
                       <div class="flex items-center gap-4">
-                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <img src="./public/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
                         <div class="flex flex-col gap-1 lg:gap-2">
                           <span class="lg:text-2xl">سارا محمدی</span>
                           <span class="text-sm lg:text-lg opacity-60">خریدار</span>
@@ -1550,7 +1289,7 @@
                   <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
                     <div class="w-full flex items-center justify-between">
                       <div class="flex items-center gap-4">
-                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <img src="./public/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
                         <div class="flex flex-col gap-1 lg:gap-2">
                           <span class="lg:text-2xl">سارا محمدی</span>
                           <span class="text-sm lg:text-lg opacity-60">خریدار</span>
@@ -1583,7 +1322,7 @@
                   <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
                     <div class="w-full flex items-center justify-between">
                       <div class="flex items-center gap-4">
-                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <img src="./public/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
                         <div class="flex flex-col gap-1 lg:gap-2">
                           <span class="lg:text-2xl">سارا محمدی</span>
                           <span class="text-sm lg:text-lg opacity-60">خریدار</span>
@@ -1616,7 +1355,7 @@
                   <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
                     <div class="w-full flex items-center justify-between">
                       <div class="flex items-center gap-4">
-                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <img src="./public/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
                         <div class="flex flex-col gap-1 lg:gap-2">
                           <span class="lg:text-2xl">سارا محمدی</span>
                           <span class="text-sm lg:text-lg opacity-60">خریدار</span>
@@ -1766,7 +1505,7 @@
       <div class="absolute inset-y-0 top-10 right-0 w-2/5 rounded-tl-4xl bg-[#070707] -z-[1]"></div>
       <div class="container flex flex-col lg:flex-row lg:items-center lg:justify-between gap-7 lg:gap-0 pb-10 lg:pb-20">
         <div class="w-full lg:w-1/3 flex flex-col gap-7 lg:gap-14">
-          <img src="/logo.jpg" alt="logo" class="rounded-4xl w-26">
+          <img src="./public/logo.jpg" alt="logo" class="rounded-4xl w-26">
           <p class="lg:text-2xl">
             آوالایت با هدف ایجاد فضایی مدرن و متفاوت، محصولات نئونی و روشنایی خلاقانه را عرضه می‌کند. ما تلاش می‌کنیم با ترکیب طراحی خاص، کیفیت بالا و تکنولوژی روز، تجربه‌ای متمایز از نورپردازی برای خانه‌ها، کسب‌وکارها و فضاهای شخصی شما بسازیم. آوالایت نماد روشنایی، خلاقیت و سبک زندگی مدرن است.
           </p>
@@ -1775,7 +1514,7 @@
           <div class="w-1/3 lg:w-auto flex flex-col gap-4">
             <span class="text-xl lg:text-3xl">دسترسی سریع</span>
             <ul class="flex flex-col gap-2 opacity-60">
-              <li><a href="/">صفحه اصلی</a></li>
+              <li><a href="./index.html">صفحه اصلی</a></li>
               <li><a href="#">محصولات</a></li>
               <li><a href="#">مقالات</a></li>
               <li><a href="#">درباره ما</a></li>
@@ -1785,7 +1524,7 @@
           <div class="flex-1 lg:w-auto flex flex-col gap-4">
             <span class="text-xl lg:text-3xl">دسته‌بندی محصولات پرکاربرد</span>
             <ul class="flex flex-col gap-2 opacity-60">
-              <li><a href="/">نئون دیواری</a></li>
+              <li><a href="./index.html">نئون دیواری</a></li>
               <li><a href="#">نورپردازی فضای داخلی</a></li>
               <li><a href="#">تابلو نئون سفارشی</a></li>
               <li><a href="#">اکسسوری‌های نئونی</a></li>
@@ -1794,7 +1533,7 @@
           <div class="flex flex-col gap-4">
             <span class="text-xl lg:text-3xl">ارتباط با ما</span>
             <ul class="flex flex-col gap-2 opacity-60">
-              <li><a href="/">شماره تماس: 021-4148463</a></li>
+              <li><a href="./index.html">شماره تماس: 021-4148463</a></li>
               <li><a href="#">آدرس: تهران خیابان آرژانتین - خیابان23 پ 9</a></li>
               <li class="w-full">
                 <hr class="w-full opacity-30">
