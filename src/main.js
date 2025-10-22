@@ -30,10 +30,33 @@ document.querySelectorAll('.collapsable').forEach(el => {
     })
 })
 
+document.querySelectorAll('.modal-overlay').forEach(overlay=>{
+    overlay.addEventListener('click', ()=>{
+        overlay.parentElement.classList.toggle('modal-hide');
+    })
+})
 document.querySelectorAll('.modal-toggle').forEach(toggle=>{
     const modalId = toggle.getAttribute('data-modal-id');
     toggle.addEventListener('click', ()=>{
-        document.getElementById(modalId).classList.toggle('hidden');
-        document.getElementById(modalId).classList.toggle('flex');
+        const modal = document.getElementById(modalId);
+        modal.classList.toggle('modal-hide');
+        if(!modal.classList.contains('modal-hide')){
+            document.body.style.overflowY = 'clip';
+        }else{
+            document.body.style.overflowY = 'auto';
+        }
+    })
+})
+
+document.querySelectorAll('.accordion').forEach(el => {
+    el.querySelector('button.accordion-toggler').addEventListener('click', ()=>{
+        el.querySelector('.accordion-content').classList.toggle('hide');
+        el.querySelector('.accordion-content').classList.toggle('show');
+    })
+})
+
+document.querySelectorAll('.readmore').forEach(el => {
+    el.querySelector('button.readmore-toggler').addEventListener('click', ()=>{
+        el.classList.toggle('show');
     })
 })

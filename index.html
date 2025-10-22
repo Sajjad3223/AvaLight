@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/style.css">
     <title>آوا لایت</title>
   </head>
@@ -597,183 +598,426 @@
             <a href="" class="lg:hidden">مشاهده همه</a>
           </div>
         </div>
-        <div class="w-full overflow-y-clip overflow-x-auto flex lg:grid lg:grid-cols-5 gap-6 pb-2">
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+        <!-- Products Slider -->
+        <div class="flex flex-col gap-4 items-center">
+          <div class="w-full">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                    <a href="" class="w-full">
+                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                    <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                    <div class="w-full p-5 flex flex-col gap-5">
+                      <a href="#" class="text-2xl">
+                        ریسه نئون فلکسی مدل NE1 طول 5 متر
+                      </a>
+                      <div class="w-full flex flex-col gap-3">
+                        <div class="w-full flex items-end justify-between">
+                          <div class="flex flex-col">
+                            <div class="flex items-end gap-1">
+                              <span class="text-2xl">320,000</span>
+                              <span class="opacity-60">تومان</span>
+                            </div>
+                            <span class="text-2xl opacity-60 line-through">360,000</span>
+                          </div>
+                          <button class="p-1.5">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                          افزودن به سبد خرید
+                        </button>
+                      </div>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+                <div class="swiper-slide">
+                  <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                    <a href="" class="w-full">
+                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                    <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                    <div class="w-full p-5 flex flex-col gap-5">
+                      <a href="#" class="text-2xl">
+                        ریسه نئون فلکسی مدل NE1 طول 5 متر
+                      </a>
+                      <div class="w-full flex flex-col gap-3">
+                        <div class="w-full flex items-end justify-between">
+                          <div class="flex flex-col">
+                            <div class="flex items-end gap-1">
+                              <span class="text-2xl">320,000</span>
+                              <span class="opacity-60">تومان</span>
+                            </div>
+                            <span class="text-2xl opacity-60 line-through">360,000</span>
+                          </div>
+                          <button class="p-1.5">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                          افزودن به سبد خرید
+                        </button>
+                      </div>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+                <div class="swiper-slide">
+                  <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                    <a href="" class="w-full">
+                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                    <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                    <div class="w-full p-5 flex flex-col gap-5">
+                      <a href="#" class="text-2xl">
+                        ریسه نئون فلکسی مدل NE1 طول 5 متر
+                      </a>
+                      <div class="w-full flex flex-col gap-3">
+                        <div class="w-full flex items-end justify-between">
+                          <div class="flex flex-col">
+                            <div class="flex items-end gap-1">
+                              <span class="text-2xl">320,000</span>
+                              <span class="opacity-60">تومان</span>
+                            </div>
+                            <span class="text-2xl opacity-60 line-through">360,000</span>
+                          </div>
+                          <button class="p-1.5">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                          افزودن به سبد خرید
+                        </button>
+                      </div>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+                <div class="swiper-slide">
+                  <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                    <a href="" class="w-full">
+                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                    <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                    <div class="w-full p-5 flex flex-col gap-5">
+                      <a href="#" class="text-2xl">
+                        ریسه نئون فلکسی مدل NE1 طول 5 متر
+                      </a>
+                      <div class="w-full flex flex-col gap-3">
+                        <div class="w-full flex items-end justify-between">
+                          <div class="flex flex-col">
+                            <div class="flex items-end gap-1">
+                              <span class="text-2xl">320,000</span>
+                              <span class="opacity-60">تومان</span>
+                            </div>
+                            <span class="text-2xl opacity-60 line-through">360,000</span>
+                          </div>
+                          <button class="p-1.5">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                          افزودن به سبد خرید
+                        </button>
+                      </div>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+                <div class="swiper-slide">
+                  <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                    <a href="" class="w-full">
+                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                    <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                    <div class="w-full p-5 flex flex-col gap-5">
+                      <a href="#" class="text-2xl">
+                        ریسه نئون فلکسی مدل NE1 طول 5 متر
+                      </a>
+                      <div class="w-full flex flex-col gap-3">
+                        <div class="w-full flex items-end justify-between">
+                          <div class="flex flex-col">
+                            <div class="flex items-end gap-1">
+                              <span class="text-2xl">320,000</span>
+                              <span class="opacity-60">تومان</span>
+                            </div>
+                            <span class="text-2xl opacity-60 line-through">360,000</span>
+                          </div>
+                          <button class="p-1.5">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                          افزودن به سبد خرید
+                        </button>
+                      </div>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
+                <div class="swiper-slide">
+                  <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
+            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
+                    <a href="" class="w-full">
+                      <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                    </a>
+
+                    <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+              7%
+            </span>
+
+                    <div class="w-full p-5 flex flex-col gap-5">
+                      <a href="#" class="text-2xl">
+                        ریسه نئون فلکسی مدل NE1 طول 5 متر
+                      </a>
+                      <div class="w-full flex flex-col gap-3">
+                        <div class="w-full flex items-end justify-between">
+                          <div class="flex flex-col">
+                            <div class="flex items-end gap-1">
+                              <span class="text-2xl">320,000</span>
+                              <span class="opacity-60">تومان</span>
+                            </div>
+                            <span class="text-2xl opacity-60 line-through">360,000</span>
+                          </div>
+                          <button class="p-1.5">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                          افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
         </div>
+        <!--<div class="w-full overflow-y-clip overflow-x-auto flex lg:grid lg:grid-cols-5 gap-6 pb-2">
+          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
+            <a href="" class="w-full">
+              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+            </a>
+
+            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+              7%
+            </span>
+
+            <div class="w-full p-5 flex flex-col gap-5">
+              <a href="#" class="text-2xl">
+                ریسه نئون فلکسی مدل NE1 طول 5 متر
+              </a>
+              <div class="w-full flex flex-col gap-3">
+                <div class="w-full flex items-end justify-between">
+                  <div class="flex flex-col">
+                    <div class="flex items-end gap-1">
+                      <span class="text-2xl">320,000</span>
+                      <span class="opacity-60">تومان</span>
+                    </div>
+                    <span class="text-2xl opacity-60 line-through">360,000</span>
+                  </div>
+                  <button class="p-1.5">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
+            <a href="" class="w-full">
+              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+            </a>
+
+            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+              7%
+            </span>
+
+            <div class="w-full p-5 flex flex-col gap-5">
+              <a href="#" class="text-2xl">
+                ریسه نئون فلکسی مدل NE1 طول 5 متر
+              </a>
+              <div class="w-full flex flex-col gap-3">
+                <div class="w-full flex items-end justify-between">
+                  <div class="flex flex-col">
+                    <div class="flex items-end gap-1">
+                      <span class="text-2xl">320,000</span>
+                      <span class="opacity-60">تومان</span>
+                    </div>
+                    <span class="text-2xl opacity-60 line-through">360,000</span>
+                  </div>
+                  <button class="p-1.5">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
+            <a href="" class="w-full">
+              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+            </a>
+
+            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+              7%
+            </span>
+
+            <div class="w-full p-5 flex flex-col gap-5">
+              <a href="#" class="text-2xl">
+                ریسه نئون فلکسی مدل NE1 طول 5 متر
+              </a>
+              <div class="w-full flex flex-col gap-3">
+                <div class="w-full flex items-end justify-between">
+                  <div class="flex flex-col">
+                    <div class="flex items-end gap-1">
+                      <span class="text-2xl">320,000</span>
+                      <span class="opacity-60">تومان</span>
+                    </div>
+                    <span class="text-2xl opacity-60 line-through">360,000</span>
+                  </div>
+                  <button class="p-1.5">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
+            <a href="" class="w-full">
+              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+            </a>
+
+            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+              7%
+            </span>
+
+            <div class="w-full p-5 flex flex-col gap-5">
+              <a href="#" class="text-2xl">
+                ریسه نئون فلکسی مدل NE1 طول 5 متر
+              </a>
+              <div class="w-full flex flex-col gap-3">
+                <div class="w-full flex items-end justify-between">
+                  <div class="flex flex-col">
+                    <div class="flex items-end gap-1">
+                      <span class="text-2xl">320,000</span>
+                      <span class="opacity-60">تومان</span>
+                    </div>
+                    <span class="text-2xl opacity-60 line-through">360,000</span>
+                  </div>
+                  <button class="p-1.5">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
+            <a href="" class="w-full">
+              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+            </a>
+
+            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+              7%
+            </span>
+
+            <div class="w-full p-5 flex flex-col gap-5">
+              <a href="#" class="text-2xl">
+                ریسه نئون فلکسی مدل NE1 طول 5 متر
+              </a>
+              <div class="w-full flex flex-col gap-3">
+                <div class="w-full flex items-end justify-between">
+                  <div class="flex flex-col">
+                    <div class="flex items-end gap-1">
+                      <span class="text-2xl">320,000</span>
+                      <span class="opacity-60">تومان</span>
+                    </div>
+                    <span class="text-2xl opacity-60 line-through">360,000</span>
+                  </div>
+                  <button class="p-1.5">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>-->
       </div>
 
       <!-- Projects -->
@@ -850,181 +1094,244 @@
           </div>
           <a href="#" class="opacity-80">مشاهده همه</a>
         </div>
-        <div class="w-full flex overflow-y-clip overflow-x-auto lg:grid lg:grid-cols-5 gap-6 pb-2">
-          <div class="w-3/4 lg:w-full shrink-0 rounded-3xl flex flex-col bg-[#0D0D0D] relative
+        <div class="w-full">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                  <a href="" class="w-full">
+                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                  <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                  <div class="w-full p-5 flex flex-col gap-5">
+                    <a href="#" class="text-2xl">
+                      ریسه نئون فلکسی مدل NE1 طول 5 متر
+                    </a>
+                    <div class="w-full flex flex-col gap-3">
+                      <div class="w-full flex items-end justify-between">
+                        <div class="flex flex-col">
+                          <div class="flex items-end gap-1">
+                            <span class="text-2xl">320,000</span>
+                            <span class="opacity-60">تومان</span>
+                          </div>
+                          <span class="text-2xl opacity-60 line-through">360,000</span>
+                        </div>
+                        <button class="p-1.5">
+                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                        افزودن به سبد خرید
+                      </button>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
               </div>
-            </div>
-          </div>
-          <div class="w-3/4 lg:w-full shrink-0 rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="swiper-slide">
+                <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                  <a href="" class="w-full">
+                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                  <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                  <div class="w-full p-5 flex flex-col gap-5">
+                    <a href="#" class="text-2xl">
+                      ریسه نئون فلکسی مدل NE1 طول 5 متر
+                    </a>
+                    <div class="w-full flex flex-col gap-3">
+                      <div class="w-full flex items-end justify-between">
+                        <div class="flex flex-col">
+                          <div class="flex items-end gap-1">
+                            <span class="text-2xl">320,000</span>
+                            <span class="opacity-60">تومان</span>
+                          </div>
+                          <span class="text-2xl opacity-60 line-through">360,000</span>
+                        </div>
+                        <button class="p-1.5">
+                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                        افزودن به سبد خرید
+                      </button>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
               </div>
-            </div>
-          </div>
-          <div class="w-3/4 lg:w-full shrink-0 rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="swiper-slide">
+                <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                  <a href="" class="w-full">
+                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                  <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                  <div class="w-full p-5 flex flex-col gap-5">
+                    <a href="#" class="text-2xl">
+                      ریسه نئون فلکسی مدل NE1 طول 5 متر
+                    </a>
+                    <div class="w-full flex flex-col gap-3">
+                      <div class="w-full flex items-end justify-between">
+                        <div class="flex flex-col">
+                          <div class="flex items-end gap-1">
+                            <span class="text-2xl">320,000</span>
+                            <span class="opacity-60">تومان</span>
+                          </div>
+                          <span class="text-2xl opacity-60 line-through">360,000</span>
+                        </div>
+                        <button class="p-1.5">
+                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                        افزودن به سبد خرید
+                      </button>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
               </div>
-            </div>
-          </div>
-          <div class="w-3/4 lg:w-full shrink-0 rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="swiper-slide">
+                <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                  <a href="" class="w-full">
+                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                  <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                  <div class="w-full p-5 flex flex-col gap-5">
+                    <a href="#" class="text-2xl">
+                      ریسه نئون فلکسی مدل NE1 طول 5 متر
+                    </a>
+                    <div class="w-full flex flex-col gap-3">
+                      <div class="w-full flex items-end justify-between">
+                        <div class="flex flex-col">
+                          <div class="flex items-end gap-1">
+                            <span class="text-2xl">320,000</span>
+                            <span class="opacity-60">تومان</span>
+                          </div>
+                          <span class="text-2xl opacity-60 line-through">360,000</span>
+                        </div>
+                        <button class="p-1.5">
+                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                        افزودن به سبد خرید
+                      </button>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
               </div>
-            </div>
-          </div>
-          <div class="w-3/4 lg:w-full shrink-0 rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="swiper-slide">
+                <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
-            <a href="" class="w-full">
-              <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
-            </a>
+                  <a href="" class="w-full">
+                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  </a>
 
-            <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+                  <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
               7%
             </span>
 
-            <div class="w-full p-5 flex flex-col gap-5">
-              <a href="#" class="text-2xl">
-                ریسه نئون فلکسی مدل NE1 طول 5 متر
-              </a>
-              <div class="w-full flex flex-col gap-3">
-                <div class="w-full flex items-end justify-between">
-                  <div class="flex flex-col">
-                    <div class="flex items-end gap-1">
-                      <span class="text-2xl">320,000</span>
-                      <span class="opacity-60">تومان</span>
+                  <div class="w-full p-5 flex flex-col gap-5">
+                    <a href="#" class="text-2xl">
+                      ریسه نئون فلکسی مدل NE1 طول 5 متر
+                    </a>
+                    <div class="w-full flex flex-col gap-3">
+                      <div class="w-full flex items-end justify-between">
+                        <div class="flex flex-col">
+                          <div class="flex items-end gap-1">
+                            <span class="text-2xl">320,000</span>
+                            <span class="opacity-60">تومان</span>
+                          </div>
+                          <span class="text-2xl opacity-60 line-through">360,000</span>
+                        </div>
+                        <button class="p-1.5">
+                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                        افزودن به سبد خرید
+                      </button>
                     </div>
-                    <span class="text-2xl opacity-60 line-through">360,000</span>
                   </div>
-                  <button class="p-1.5">
-                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
                 </div>
-                <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
-                  افزودن به سبد خرید
-                </button>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative m-1
+            before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
+                  <a href="" class="w-full">
+                    <img src="/light.png" alt="light" class="w-full rounded-2xl p-1.5">
+                  </a>
+
+                  <span class="absolute z-[2] left-4 top-4 bg-primary/30 rounded-lg px-3 text-primary text-xl font-black">
+              7%
+            </span>
+
+                  <div class="w-full p-5 flex flex-col gap-5">
+                    <a href="#" class="text-2xl">
+                      ریسه نئون فلکسی مدل NE1 طول 5 متر
+                    </a>
+                    <div class="w-full flex flex-col gap-3">
+                      <div class="w-full flex items-end justify-between">
+                        <div class="flex flex-col">
+                          <div class="flex items-end gap-1">
+                            <span class="text-2xl">320,000</span>
+                            <span class="opacity-60">تومان</span>
+                          </div>
+                          <span class="text-2xl opacity-60 line-through">360,000</span>
+                        </div>
+                        <button class="p-1.5">
+                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001 18.2394L9.30745 15.4749L6.6351 12.7104C5.18934 11.1825 5.18934 8.79127 6.6351 7.26342C7.34304 6.58305 8.3019 6.2275 9.28226 6.28185C10.2626 6.3362 11.1763 6.79555 11.8047 7.55001L12.001 7.7426L12.1954 7.54172C12.8238 6.78726 13.7375 6.32791 14.7179 6.27356C15.6982 6.21921 16.6571 6.57476 17.365 7.25513C18.8108 8.78298 18.8108 11.1743 17.365 12.7021L14.6927 15.4666L12.001 18.2394Z" stroke="white" stroke-width="1.18478" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                        افزودن به سبد خرید
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </div>
@@ -1048,53 +1355,141 @@
             </div>
             <a href="#" class="opacity-80">مشاهده همه</a>
           </div>
-          <div class="w-full flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-9">
-            <div class="w-full flex flex-col gap-3 lg:gap-6">
-              <img src="/light.png" alt="light" class="w-full rounded-4xl">
-              <div class="w-full flex flex-col gap-2">
+
+          <div class="w-full overflow-clip">
+            <!-- Slider main container -->
+            <div class="swiper-blogs">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                    <div class="w-full flex flex-col gap-2">
               <span class="text-xl lg:text-3xl">
                 چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
               </span>
-                <p class="lg:text-2xl opacity-60">
-                  راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
-                </p>
-              </div>
-              <div class="flex items-center gap-6">
-                <span>1404/12/23</span>
-                <span>36 بازدید</span>
-              </div>
-            </div>
-            <div class="w-full flex flex-col gap-3 lg:gap-6">
-              <img src="/light.png" alt="light" class="w-full rounded-4xl">
-              <div class="w-full flex flex-col gap-2">
+                      <p class="lg:text-2xl opacity-60">
+                        راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                      <span>1404/12/23</span>
+                      <span>36 بازدید</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                    <div class="w-full flex flex-col gap-2">
               <span class="text-xl lg:text-3xl">
                 چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
               </span>
-                <p class="lg:text-2xl opacity-60">
-                  راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
-                </p>
-              </div>
-              <div class="flex items-center gap-6">
-                <span>1404/12/23</span>
-                <span>36 بازدید</span>
-              </div>
-            </div>
-            <div class="w-full flex flex-col gap-3 lg:gap-6">
-              <img src="/light.png" alt="light" class="w-full rounded-4xl">
-              <div class="w-full flex flex-col gap-2">
+                      <p class="lg:text-2xl opacity-60">
+                        راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                      <span>1404/12/23</span>
+                      <span>36 بازدید</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                    <div class="w-full flex flex-col gap-2">
               <span class="text-xl lg:text-3xl">
                 چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
               </span>
-                <p class="lg:text-2xl opacity-60">
-                  راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
-                </p>
+                      <p class="lg:text-2xl opacity-60">
+                        راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                      <span>1404/12/23</span>
+                      <span>36 بازدید</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-3 lg:gap-6">
+                    <img src="/light.png" alt="light" class="w-full rounded-4xl">
+                    <div class="w-full flex flex-col gap-2">
+              <span class="text-xl lg:text-3xl">
+                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+              </span>
+                      <p class="lg:text-2xl opacity-60">
+                        راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                      <span>1404/12/23</span>
+                      <span>36 بازدید</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-6">
-                <span>1404/12/23</span>
-                <span>36 بازدید</span>
-              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
+
+          <!--<div class="w-full flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-9">
+            <div class="w-full flex flex-col gap-3 lg:gap-6">
+              <img src="/light.png" alt="light" class="w-full rounded-4xl">
+              <div class="w-full flex flex-col gap-2">
+              <span class="text-xl lg:text-3xl">
+                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+              </span>
+              <p class="lg:text-2xl opacity-60">
+                راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
+              </p>
+              </div>
+              <div class="flex items-center gap-6">
+                <span>1404/12/23</span>
+                <span>36 بازدید</span>
+              </div>
+            </div>
+            <div class="w-full flex flex-col gap-3 lg:gap-6">
+              <img src="/light.png" alt="light" class="w-full rounded-4xl">
+              <div class="w-full flex flex-col gap-2">
+              <span class="text-xl lg:text-3xl">
+                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+              </span>
+                <p class="lg:text-2xl opacity-60">
+                  راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
+                </p>
+              </div>
+              <div class="flex items-center gap-6">
+                <span>1404/12/23</span>
+                <span>36 بازدید</span>
+              </div>
+            </div>
+            <div class="w-full flex flex-col gap-3 lg:gap-6">
+              <img src="/light.png" alt="light" class="w-full rounded-4xl">
+              <div class="w-full flex flex-col gap-2">
+              <span class="text-xl lg:text-3xl">
+                چطور با نور نئونی دکوراسیون خانه‌تان را خاص کنید؟
+              </span>
+                <p class="lg:text-2xl opacity-60">
+                  راهنمایی برای استفاده از چراغ‌ها و ریسه‌های نئونی در اتاق خواب، نشیمن و آشپزخانه.
+                </p>
+              </div>
+              <div class="flex items-center gap-6">
+                <span>1404/12/23</span>
+                <span>36 بازدید</span>
+              </div>
+            </div>
+          </div>-->
         </div>
       </div>
 
@@ -1111,101 +1506,158 @@
               <span class="lg:text-2xl opacity-60 text-center">تجربه واقعی خریداران آوالایت را بخوانید و مطمئن‌تر انتخاب کنید</span>
             </div>
           </div>
-          <div class="w-full flex flex-col lg:grid lg:grid-cols-3 gap-4 lg:gap-8">
-            <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
-              <div class="w-full flex items-center justify-between">
-                <div class="flex items-center gap-4">
-                  <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
-                  <div class="flex flex-col gap-1 lg:gap-2">
-                    <span class="lg:text-2xl">سارا محمدی</span>
-                    <span class="text-sm lg:text-lg opacity-60">خریدار</span>
+
+          <div class="w-full overflow-clip">
+            <!-- Slider main container -->
+            <div class="swiper-blogs">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
+                    <div class="w-full flex items-center justify-between">
+                      <div class="flex items-center gap-4">
+                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                          <span class="lg:text-2xl">سارا محمدی</span>
+                          <span class="text-sm lg:text-lg opacity-60">خریدار</span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-sm lg:text-lg opacity-70">
+                      از خرید چراغ نئونی خیلی راضی هستم، کیفیت عالی و نور فوق‌العاده‌ای داره. فضای اتاقم رو کاملاً متفاوت کرده.
+                    </p>
                   </div>
                 </div>
-                <div class="flex items-center gap-1">
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                </div>
-              </div>
-              <p class="text-sm lg:text-lg opacity-70">
-                از خرید چراغ نئونی خیلی راضی هستم، کیفیت عالی و نور فوق‌العاده‌ای داره. فضای اتاقم رو کاملاً متفاوت کرده.
-              </p>
-            </div>
-            <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
-              <div class="w-full flex items-center justify-between">
-                <div class="flex items-center gap-4">
-                  <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
-                  <div class="flex flex-col gap-1 lg:gap-2">
-                    <span class="lg:text-2xl">سارا محمدی</span>
-                    <span class="text-sm lg:text-lg opacity-60">خریدار</span>
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
+                    <div class="w-full flex items-center justify-between">
+                      <div class="flex items-center gap-4">
+                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                          <span class="lg:text-2xl">سارا محمدی</span>
+                          <span class="text-sm lg:text-lg opacity-60">خریدار</span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-sm lg:text-lg opacity-70">
+                      از خرید چراغ نئونی خیلی راضی هستم، کیفیت عالی و نور فوق‌العاده‌ای داره. فضای اتاقم رو کاملاً متفاوت کرده.
+                    </p>
                   </div>
                 </div>
-                <div class="flex items-center gap-1">
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                </div>
-              </div>
-              <p class="text-sm lg:text-lg opacity-70">
-                از خرید چراغ نئونی خیلی راضی هستم، کیفیت عالی و نور فوق‌العاده‌ای داره. فضای اتاقم رو کاملاً متفاوت کرده.
-              </p>
-            </div>
-            <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
-              <div class="w-full flex items-center justify-between">
-                <div class="flex items-center gap-4">
-                  <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
-                  <div class="flex flex-col gap-1 lg:gap-2">
-                    <span class="lg:text-2xl">سارا محمدی</span>
-                    <span class="text-sm lg:text-lg opacity-60">خریدار</span>
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
+                    <div class="w-full flex items-center justify-between">
+                      <div class="flex items-center gap-4">
+                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                          <span class="lg:text-2xl">سارا محمدی</span>
+                          <span class="text-sm lg:text-lg opacity-60">خریدار</span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-sm lg:text-lg opacity-70">
+                      از خرید چراغ نئونی خیلی راضی هستم، کیفیت عالی و نور فوق‌العاده‌ای داره. فضای اتاقم رو کاملاً متفاوت کرده.
+                    </p>
                   </div>
                 </div>
-                <div class="flex items-center gap-1">
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
-                  <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
-                  </svg>
+                <div class="swiper-slide">
+                  <div class="w-full flex flex-col gap-6 lg:gap-12 p-8 rounded-4xl bg-bg">
+                    <div class="w-full flex items-center justify-between">
+                      <div class="flex items-center gap-4">
+                        <img src="/logo.jpg" alt="avatar" class="size-12 lg:size-16 rounded-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                          <span class="lg:text-2xl">سارا محمدی</span>
+                          <span class="text-sm lg:text-lg opacity-60">خریدار</span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                        <svg class="w-4 lg:w-5" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F8CD20"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-sm lg:text-lg opacity-70">
+                      از خرید چراغ نئونی خیلی راضی هستم، کیفیت عالی و نور فوق‌العاده‌ای داره. فضای اتاقم رو کاملاً متفاوت کرده.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <p class="text-sm lg:text-lg opacity-70">
-                از خرید چراغ نئونی خیلی راضی هستم، کیفیت عالی و نور فوق‌العاده‌ای داره. فضای اتاقم رو کاملاً متفاوت کرده.
-              </p>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
+
         </div>
 
       </div>
@@ -1423,6 +1875,71 @@
     </footer>
 
     <script src="./src/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: false,
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 8
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 12
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 12
+          },
+          1000: {
+            slidesPerView: 4,
+            spaceBetween: 14
+          },
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 16
+          }
+        },
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+      const swiperBlogs = new Swiper('.swiper-blogs', {
+        // Optional parameters
+        loop: false,
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 8
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 12
+          },
+          1400: {
+            slidesPerView: 3,
+            spaceBetween: 16
+          }
+        },
+
+      });
+    </script>
 
   </body>
 </html>
