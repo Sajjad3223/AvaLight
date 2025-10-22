@@ -363,7 +363,7 @@ button{
     & .readmore-content{
         @apply max-h-[100px] overflow-y-clip relative transition-all duration-300;
         &:after{
-            @apply absolute content-[''] inset-0 bg-gradient-to-b from-transparent to-darkSurface transition-opacity duration-300;
+            @apply absolute content-[''] inset-0 bg-gradient-to-b from-transparent to-bg transition-opacity duration-300;
         }
     }
 

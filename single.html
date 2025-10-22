@@ -170,7 +170,7 @@
     <main class="w-full flex flex-col items-center gap-10 lg:gap-24 my-10 lg:my-16 relative">
 
       <!-- Breadcrumb -->
-      <div class="container bg-[#0D0D0D] flex flex-col lg:flex-row lg:items-center lg:justify-between rounded-4xl py-5 px-9 gap-4">
+      <div class="container bg-surface flex flex-col lg:flex-row lg:items-center lg:justify-between rounded-4xl py-5 px-9 gap-4">
         <div class="w-full flex flex-col items-center gap-6">
           <div class="flex flex-col items-center gap-2">
             <ul class="lg:text-2xl flex items-center justify-center gap-2">
@@ -297,19 +297,19 @@
                 <div class="flex gap-4">
                   <div>
                     <input type="radio" name="color" id="yellow" class="peer hidden">
-                    <label for="yellow" class="size-7 rounded-full bg-yellow-400 flex"></label>
+                    <label for="yellow" class="size-7 rounded-full bg-yellow-400 flex peer-checked:ring-2 ring-info ring-offset-2 ring-offset-bg"></label>
                   </div>
                   <div>
                     <input type="radio" name="color" id="blue" class="peer hidden">
-                    <label for="yellow" class="size-7 rounded-full bg-blue-400 flex"></label>
+                    <label for="blue" class="size-7 rounded-full bg-blue-400 flex peer-checked:ring-2 ring-info ring-offset-2 ring-offset-bg"></label>
                   </div>
                   <div>
                     <input type="radio" name="color" id="red" class="peer hidden">
-                    <label for="yellow" class="size-7 rounded-full bg-red-400 flex"></label>
+                    <label for="red" class="size-7 rounded-full bg-red-400 flex peer-checked:ring-2 ring-info ring-offset-2 ring-offset-bg"></label>
                   </div>
                   <div>
                     <input type="radio" name="color" id="green" class="peer hidden">
-                    <label for="yellow" class="size-7 rounded-full bg-green-400 flex"></label>
+                    <label for="green" class="size-7 rounded-full bg-green-400 flex peer-checked:ring-2 ring-info ring-offset-2 ring-offset-bg"></label>
                   </div>
                 </div>
               </div>
@@ -364,7 +364,7 @@
                 </div>
               </div>
               <div class="w-full flex flex-col gap-7 bg-surface rounded-4xl p-6 border">
-                <button class="btn btn-primary !py-4">افزودن به سبد خرید</button>
+                <button class="btn btn-primary !w-full !py-4">افزودن به سبد خرید</button>
                 <a href="#" class="w-full flex items-center justify-between">
                   <span class="text-xl">روش و هزینه ارسال</span>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +376,7 @@
 
             <!-- Price in Mobiles -->
             <div class="fixed lg:hidden inset-x-0 py-4 px-5 bg-surface bottom-0 grid grid-cols-2 z-30">
-              <button class="btn btn-primary !py-4">افزودن به سبد خرید</button>
+              <button class="btn btn-primary !w-full !py-4">افزودن به سبد خرید</button>
               <div class="flex flex-col items-end">
                 <div class="flex items-center gap-1">
                   <span class="text-2xl font-bold">1,280,000</span>
@@ -393,7 +393,7 @@
 
           <!-- Related Products -->
           <div class="w-full flex flex-col gap-6">
-            <div class="w-full bg-[#0D0D0D] flex flex-col lg:flex-row lg:items-center lg:justify-between rounded-4xl py-5 px-9 gap-4">
+            <div class="w-full bg-surface flex flex-col lg:flex-row lg:items-center lg:justify-between rounded-4xl py-5 px-9 gap-4">
               <div class="flex items-center gap-6">
                 <svg class="hidden lg:block" width="43" height="29" viewBox="0 0 43 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect opacity="0.2" x="14.1816" y="14.3237" width="20" height="20" rx="4" transform="rotate(-45 14.1816 14.3237)" fill="white"/>
@@ -406,7 +406,7 @@
               </div>
             </div>
             <div class="w-full overflow-y-clip overflow-x-auto flex lg:grid lg:grid-cols-5 gap-6 pb-2">
-              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-surface relative
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
                 <a href="" class="w-full">
                   <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
@@ -435,13 +435,13 @@
                         </svg>
                       </button>
                     </div>
-                    <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                    <button class="py-2 w-full bg-bg hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
                       افزودن به سبد خرید
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-surface relative
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
                 <a href="" class="w-full">
                   <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
@@ -470,13 +470,13 @@
                         </svg>
                       </button>
                     </div>
-                    <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                    <button class="py-2 w-full bg-bg hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
                       افزودن به سبد خرید
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-surface relative
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
                 <a href="" class="w-full">
                   <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
@@ -505,13 +505,13 @@
                         </svg>
                       </button>
                     </div>
-                    <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                    <button class="py-2 w-full bg-bg hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
                       افزودن به سبد خرید
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-surface relative
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
                 <a href="" class="w-full">
                   <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
@@ -540,13 +540,13 @@
                         </svg>
                       </button>
                     </div>
-                    <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                    <button class="py-2 w-full bg-bg hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
                       افزودن به سبد خرید
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-[#0D0D0D] relative
+              <div class="shrink-0 w-3/4 lg:w-full rounded-3xl flex flex-col bg-surface relative
             before:absolute before:-inset-0.5 before:-z-[3] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-br before:from-transparent before:to-indigo-500 before:from-40% before:rounded-3xl">
                 <a href="" class="w-full">
                   <img src="./public/light.png" alt="light" class="w-full rounded-2xl p-1.5">
@@ -575,7 +575,7 @@
                         </svg>
                       </button>
                     </div>
-                    <button class="py-2 w-full bg-[#0a0a0a] hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
+                    <button class="py-2 w-full bg-bg hover:bg-primary hover:text-black transition-all duration-300 rounded-full ">
                       افزودن به سبد خرید
                     </button>
                   </div>
@@ -703,7 +703,7 @@
                         4/2 امتیاز از 63 نظر
                       </span>
                     </div>
-                    <button class="btn btn-outline py-2 w-full !hidden lg:!flex">ثبت نظر</button>
+                    <button class="btn btn-outline btn-primary py-2 !w-full !hidden lg:!flex">ثبت نظر</button>
                   </div>
                   <div class="flex-1 flex flex-col gap-12">
                     <!-- Sort Filter -->
@@ -738,7 +738,7 @@
 
                     <!-- Comments -->
                     <ul class="w-full flex lg:flex-col lg:divide-y lg:divide-white/10 gap-4 lg:gap-0 overflow-x-auto">
-                      <li class="max-w-[300px] lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
+                      <li class="max-w-[300px] lg:max-w-max lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
                         <div class="flex items-center justify-between">
                           <div class="flex items-center gap-4">
                             <div class="w-16 rounded-full aspect-square bg-white"></div>
@@ -786,7 +786,7 @@
                           </button>
                         </div>
                       </li>
-                      <li class="max-w-[300px] lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
+                      <li class="max-w-[300px] lg:max-w-max lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
                         <div class="flex items-center justify-between">
                           <div class="flex items-center gap-4">
                             <div class="w-16 rounded-full aspect-square bg-white"></div>
@@ -834,7 +834,7 @@
                           </button>
                         </div>
                       </li>
-                      <li class="max-w-[300px] lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
+                      <li class="max-w-[300px] lg:max-w-max lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
                         <div class="flex items-center justify-between">
                           <div class="flex items-center gap-4">
                             <div class="w-16 rounded-full aspect-square bg-white"></div>
@@ -882,7 +882,7 @@
                           </button>
                         </div>
                       </li>
-                      <li class="max-w-[300px] lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
+                      <li class="max-w-[300px] lg:max-w-max lg:w-full shrink-0 flex flex-col gap-4 p-4 border lg:border-none rounded-2xl lg:px-0 lg:py-6 lg:first:pt-0 lg:last:pb-0">
                         <div class="flex items-center justify-between">
                           <div class="flex items-center gap-4">
                             <div class="w-16 rounded-full aspect-square bg-white"></div>
@@ -938,7 +938,7 @@
                         دیدگاه و نظر خود را <br>
                         در مورد این کالا ثبت کنید.
                       </p>
-                      <button class="btn btn-outline py-2 w-1/3 !border-white">
+                      <button class="btn btn-outline btn-primary py-2 w-1/3 !border-white">
                         <span>ثبت نظر</span>
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M15.5 7L10.5 12L15.5 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -990,7 +990,7 @@
                   </button>
                 </div>
               </div>
-              <button class="btn btn-primary !py-4">افزودن به سبد خرید</button>
+              <button class="btn btn-primary !w-full !py-4">افزودن به سبد خرید</button>
             </div>
           </div>
 
@@ -1000,7 +1000,7 @@
     </main>
 
     <footer class="w-full flex flex-col relative">
-      <div class="absolute inset-y-0 top-10 right-0 w-2/5 rounded-tl-4xl bg-[#070707] -z-[1]"></div>
+      <div class="absolute inset-y-0 top-10 right-0 w-2/5 rounded-tl-4xl bg-darkSurface -z-[1]"></div>
       <div class="container flex flex-col lg:flex-row lg:items-center lg:justify-between gap-7 lg:gap-0 pb-10 lg:pb-20">
         <div class="w-full lg:w-1/3 flex flex-col gap-7 lg:gap-14">
           <img src="./public/logo.jpg" alt="logo" class="rounded-4xl w-26">
