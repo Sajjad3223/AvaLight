@@ -263,7 +263,7 @@ button{
         @apply lg:text-xl pr-5;
     }
     & > input{
-        @apply py-5 px-6 rounded-4xl border-2 border-white/10 focus:outline-none focus:border-white/60 lg:text-xl transition-all duration-300;
+        @apply py-5 px-6 rounded-4xl border-2 border-white/10 focus:outline-none focus:border-white/60 lg:text-xl transition-all duration-300 placeholder-white/50;
 
         &.input-error{
             @apply border-danger;

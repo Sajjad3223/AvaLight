@@ -32,21 +32,24 @@ document.querySelectorAll('.collapsable').forEach(el => {
 
 document.querySelectorAll('.modal-overlay').forEach(overlay=>{
     overlay.addEventListener('click', ()=>{
-        overlay.parentElement.classList.toggle('modal-hide');
+        toggleModal(overlay.parentElement);
     })
 })
 document.querySelectorAll('.modal-toggle').forEach(toggle=>{
     const modalId = toggle.getAttribute('data-modal-id');
     toggle.addEventListener('click', ()=>{
-        const modal = document.getElementById(modalId);
-        modal.classList.toggle('modal-hide');
-        if(!modal.classList.contains('modal-hide')){
-            document.body.style.overflowY = 'clip';
-        }else{
-            document.body.style.overflowY = 'auto';
-        }
+        toggleModal(document.getElementById(modalId));
     })
 })
+const toggleModal = (modalEl) => {
+    const modal = modalEl;
+    modal.classList.toggle('modal-hide');
+    if(!modal.classList.contains('modal-hide')){
+        document.body.style.overflowY = 'clip';
+    }else{
+        document.body.style.overflowY = 'auto';
+    }
+}
 
 document.querySelectorAll('.accordion').forEach(el => {
     el.querySelector('button.accordion-toggler').addEventListener('click', ()=>{

@@ -22,8 +22,27 @@
           <li>
             <a href="./index.html">صفحه اصلی</a>
           </li>
-          <li>
-            <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./products.html">محصولات</a>
+          <li class="relative group py-2">
+            <span class="flex items-center gap-2 opacity-70 hover:opacity-90 transition-opacity duration-300">
+              <a href="./products.html">محصولات</a>
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.75 0.75L5.75 5.75L0.75 0.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <ul class="absolute z-10 shadow-xl w-max top-full right-0 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 flex flex-col px-4 py-2 rounded-xl bg-surface border gap-2">
+              <li>
+                <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./products.html">چراغ نئونی</a>
+              </li>
+              <li>
+                <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./products.html">چراغ مطالعه</a>
+              </li>
+              <li>
+                <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./products.html">چراغ نئونی</a>
+              </li>
+              <li>
+                <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./products.html">چراغ مطالعه</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a class="opacity-70 hover:opacity-90 transition-opacity duration-300" href="./about-us.html">درباره ما</a>
@@ -40,7 +59,7 @@
         </ul>
       </nav>
       <div class="w-full hidden lg:flex items-center justify-end gap-5">
-        <button>
+        <button class="modal-toggle" data-modal-id="searchModal">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83203 13.0031C5.83151 9.58341 8.24674 6.63957 11.6006 5.97195C14.9545 5.30433 18.313 7.09887 19.622 10.2581C20.9311 13.4173 19.8262 17.0613 16.9831 18.9615C14.1399 20.8617 10.3504 20.4889 7.93203 18.0711C6.5876 16.7271 5.83219 14.9041 5.83203 13.0031Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M18.0703 18.0723L22.1665 22.1684" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -121,6 +140,30 @@
         </svg>
       </button>
     </header>
+
+    <div class="modal modal-hide" id="searchModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <span class="text-3xl">جستجو محصولات</span>
+          <button class="btn btn-secondary btn-flat btn-icon modal-toggle" data-modal-id="searchModal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.46967 16.4697C6.17678 16.7626 6.17678 17.2374 6.46967 17.5303C6.76256 17.8232 7.23744 17.8232 7.53033 17.5303L7 17L6.46967 16.4697ZM12.5303 12.5303C12.8232 12.2374 12.8232 11.7626 12.5303 11.4697C12.2374 11.1768 11.7626 11.1768 11.4697 11.4697L12 12L12.5303 12.5303ZM11.4697 11.4697C11.1768 11.7626 11.1768 12.2374 11.4697 12.5303C11.7626 12.8232 12.2374 12.8232 12.5303 12.5303L12 12L11.4697 11.4697ZM17.5303 7.53033C17.8232 7.23744 17.8232 6.76256 17.5303 6.46967C17.2374 6.17678 16.7626 6.17678 16.4697 6.46967L17 7L17.5303 7.53033ZM12.5303 11.4697C12.2374 11.1768 11.7626 11.1768 11.4697 11.4697C11.1768 11.7626 11.1768 12.2374 11.4697 12.5303L12 12L12.5303 11.4697ZM16.4697 17.5303C16.7626 17.8232 17.2374 17.8232 17.5303 17.5303C17.8232 17.2374 17.8232 16.7626 17.5303 16.4697L17 17L16.4697 17.5303ZM11.4697 12.5303C11.7626 12.8232 12.2374 12.8232 12.5303 12.5303C12.8232 12.2374 12.8232 11.7626 12.5303 11.4697L12 12L11.4697 12.5303ZM7.53033 6.46967C7.23744 6.17678 6.76256 6.17678 6.46967 6.46967C6.17678 6.76256 6.17678 7.23744 6.46967 7.53033L7 7L7.53033 6.46967ZM7 17L7.53033 17.5303L12.5303 12.5303L12 12L11.4697 11.4697L6.46967 16.4697L7 17ZM12 12L12.5303 12.5303L17.5303 7.53033L17 7L16.4697 6.46967L11.4697 11.4697L12 12ZM12 12L11.4697 12.5303L16.4697 17.5303L17 17L17.5303 16.4697L12.5303 11.4697L12 12ZM12 12L12.5303 11.4697L7.53033 6.46967L7 7L6.46967 7.53033L11.4697 12.5303L12 12Z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+        <div class="divider divider-empty"></div>
+        <div class="modal-content">
+          <div class="w-full form-input">
+            <input type="text" id="input1" name="input1" placeholder="دنبال چه محصولی هستید" >
+            <span class="text-danger error-message">نام به درستی وارد نشده است</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary self-end mr-auto">جستجو</button>
+        </div>
+      </div>
+    </div>
 
     <svg class="w-5/6 2xl:w-3/4 absolute -z-[1] hidden lg:block pointer-events-none top-0 right-0"  viewBox="0 0 1323 445" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_f_62_6207)">
@@ -582,16 +625,20 @@
           </div>
           <div class="w-full lg:w-auto flex items-end justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-9 lg:w-16 flex flex-col gap-2">
-                <span class="text-2xl lg:text-4xl">36</span>
+              <div class="w-9 lg:w-16 flex flex-col gap-2 items-center">
+                <span id="festival-secs" class="text-2xl lg:text-4xl">05</span>
+                <span class="lg:text-2x opacity-70">ثانیه</span>
+              </div>
+              <div class="w-9 lg:w-16 flex flex-col gap-2 items-center">
+                <span id="festival-mins" class="text-2xl lg:text-4xl">01</span>
                 <span class="lg:text-2x opacity-70">دقیقه</span>
               </div>
-              <div class="w-9 lg:w-16 flex flex-col gap-2">
-                <span class="text-2xl lg:text-4xl">17</span>
+              <div class="w-9 lg:w-16 flex flex-col gap-2 items-center">
+                <span id="festival-hours" class="text-2xl lg:text-4xl">17</span>
                 <span class="lg:text-2x opacity-70">ساعت</span>
               </div>
-              <div class="w-9 lg:w-16 flex flex-col gap-2">
-                <span class="text-2xl lg:text-4xl">3</span>
+              <div class="w-9 lg:w-16 flex flex-col gap-2 items-center">
+                <span id="festival-days" class="text-2xl lg:text-4xl">03</span>
                 <span class="lg:text-2x opacity-70">روز</span>
               </div>
             </div>
@@ -1614,6 +1661,55 @@
     </footer>
 
     <script src="./src/main.js"></script>
+
+    <script>
+      const countdown = ()=>{
+        let days = 3;
+        let hours = 17;
+        let minutes = 1;
+        let seconds = 5;
+
+        const timer = setInterval(()=>{
+          seconds--;
+          if(seconds < 0){
+            seconds = 59;
+            minutes--;
+            if(minutes < 0){
+              minutes = 59;
+              hours--;
+              if(hours < 0){
+                hours = 23;
+                days--;
+                if(days < 0){
+                  days = 0;
+                  clearInterval(timer);
+                }
+              }
+            }
+          }
+
+          const daysEl = document.getElementById('festival-days');
+          daysEl.innerText = to2Digits(days);
+          const hoursEl = document.getElementById('festival-hours');
+          hoursEl.innerText = to2Digits(hours);
+          const minsEl = document.getElementById('festival-mins');
+          minsEl.innerText = to2Digits(minutes);
+          const secsEl = document.getElementById('festival-secs');
+          secsEl.innerText = to2Digits(seconds);
+
+        },1000);
+
+      }
+
+      const to2Digits = (num)=>{
+        if(num < 10)
+          return `0${num}`;
+        else
+          return num.toString();
+      }
+
+      countdown();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>

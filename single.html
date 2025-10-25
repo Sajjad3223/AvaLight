@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/output.css">
     <title>محصولات | آوا لایت</title>
   </head>
@@ -198,14 +199,55 @@
         </div>
       </div>
 
+      <div class="modal modal-hide" id="img-preview-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body ">
+          <div class="w-full flex flex-col gap-4">
+            <img src="public/light.png" alt="light" id="modal-preview-image" class="rounded-4xl">
+          </div>
+        </div>
+      </div>
+
       <!-- Main Content -->
       <div class="container mx-auto flex flex-col lg:flex-row gap-6">
 
         <main class="w-full flex flex-col gap-32">
           <div class="w-full flex flex-col lg:flex-row gap-9">
             <!-- Images -->
-            <div class="w-full lg:w-1/4 aspect-square rounded-4xl overflow-clip">
-              <img src="./public/light.png" alt="light" class="w-full h-full object-cover">
+            <div class="w-full lg:w-1/4 aspect-square rounded-4xl overflow-clip flex flex-col gap-4">
+              <button class="modal-toggle h-full w-full max-h-2/3" data-modal-id="img-preview-modal" onclick="setImagePreviewModalSrc(event)">
+                <img src="./public/light.png" alt="light" class="w-full h-full object-cover rounded-4xl" id="img-preview">
+              </button>
+              <div class="w-full">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <button onclick="changeImagePreview('./public/light.png')">
+                        <img src="./public/light.png" alt="light" class="rounded-xl border">
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button onclick="changeImagePreview('./public/avalight-light.png')">
+                        <img src="./public/avalight-light.png" alt="light" class="rounded-xl border">
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button onclick="changeImagePreview('./public/light.png')">
+                        <img src="./public/light.png" alt="light" class="rounded-xl border">
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button onclick="changeImagePreview('./public/logo.jpg')">
+                        <img src="./public/logo.jpg" alt="light" class="rounded-xl border">
+                      </button>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
 
             <!-- Product Title & Colors -->
@@ -1111,7 +1153,48 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./src/main.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: false,
+        slidesPerView:3.2,
+        spaceBetween:10,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+
+  <script>
+
+    const changeImagePreview = (img)=>{
+      const imagePreviewEl = document.getElementById('img-preview');
+      imagePreviewEl.src = img;
+    }
+
+    const setImagePreviewModalSrc = (event) => {
+      const modalPreviewImage = document.getElementById('modal-preview-image');
+      const imagePreviewEl = document.getElementById('img-preview');
+      modalPreviewImage.src = imagePreviewEl.src;
+    }
+
+  </script>
 
   </body>
 </html>
